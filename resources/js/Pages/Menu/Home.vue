@@ -8,14 +8,14 @@ import Dropdown from '@/Components/Dropdown.vue';
     <Dropdown></Dropdown>
     <topo></topo>
 
-    <div class="grid sm:grid-cols-4 gap-2 sm:mx-8 sm:py-3bg-gray-50 flex flex-wrap">   <!--inicio das noticias-->
+    <div class="sm:grid grid-cols-4 gap-2 sm:mx-8 sm:py-3bg-gray-50 sm:flex flex-wrap">   <!--inicio das noticias-->
 
-        <div class="col-span-3 px-auto">
+        <div class="col-span-3 sm:pt-4 px-auto">
             <div class="flex justify-center">
-                <h1 class=" sm:text-5xl sm:py-3 hover:text-red-600">Ultimas Notícias</h1>
+                <h1 class="font-sans text-xl sm:text-3xl sm:py-3 hover:text-red-600">Ultimas Notícias</h1>
             </div>
 
-            <div class="grid sm:grid-cols-3 gap-6 pt-4">
+                <div class="grid sm:grid-cols-3 gap-6 pt-4">
                     <div class=""> <!-- anuncios 1 coluna -->
                         <ul class="">
                             <li class="mx-auto drop-shadow-xl hover:bg-gray-50">
@@ -160,15 +160,16 @@ import Dropdown from '@/Components/Dropdown.vue';
                             </li>
                         </ul>
                     </div> <!--fim da 3 coluna-->
-            </div>    <!-- parte de noticias -->
+                </div>    <!-- parte de noticias -->
 
         </div>  <!--fim das noticias-->
 
         <!-- parte de anuncios -->
-        <div class="justify-items-center mx-auto sm:justify-center sm:grid-cols-1 sm:border-l-2 border-red-600">
-
-            <h3 class="text-center">Anuncios</h3>
-            <img src="https://picsum.photos/300/600" class="mx-auto sm:mx-auto">
+        <div class="justify-items-center pt-4 mx-auto sm:justify-center sm:grid-cols-1 sm:border-l-2 border-red-600">
+            <div class="grid justify-items-center">
+                <h3 class="text-center mx-auto ">Anuncios</h3>
+                <img src="https://picsum.photos/300/600" class="mx-auto">
+            </div>
 
             <div class="justify-center pl-4">   <!-- inicio Noticias mais lindas -->
                 <H2 class="justify-center text-center pt-4 font-sans text-lg"> Mais Lidas</H2>

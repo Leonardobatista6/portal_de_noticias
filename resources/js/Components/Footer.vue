@@ -275,31 +275,13 @@
                     </div>
 
                     <div>
-                        <p class="font-medium text-gray-900">Legal</p>
+                        <p class="font-medium text-gray-900">Desenvolvedor</p>
 
                         <nav aria-label="Footer Navigation - Legal" class="mt-6">
                             <ul class="space-y-4 text-sm">
                                 <li>
                                     <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                        Accessibility
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                        Returns Policy
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                        Refund Policy
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                        Hiring Statistics
+                                        Leonardo Vasconcelos
                                     </a>
                                 </li>
                             </ul>
@@ -309,7 +291,7 @@
             </div>
 
             <p class="text-xs text-gray-500">
-                &copy; 2022. Company Name. All rights reserved.
+                &copy; 2023. Company Name. Todos os Direitos Reservados.
             </p>
         </div>
     </footer>

@@ -4,38 +4,93 @@ import {ref} from "vue";
 
 </script>
 <template>
+    <header aria-label="Site Header" class="bg-white">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="md:flex md:items-center md:gap-12">
+                    <a class="block text-teal-600" href="/home">
+                        <span class="sr-only">Home</span>
+                       logo
+                    </a>
+                </div>
 
+                <div class="hidden md:block">
+                    <nav aria-label="Site Nav">
+                        <ul class="flex items-center gap-6 text-sm">
+                            <li>
+                                <a
+                                    class="fonte-sans sm:text-xl text-slate-600 transition hover:border-2 border-b-red-500"
+                                    href="/"
+                                >
+                                    Inicio
+                                </a>
+                            </li>
 
-    <div class="py-3.5 px-6 shadow md:flex justify-between items-center">
-        <div class="flex items-center">
-            <span class="md:hidden block h-10"> <ion-icon name="menu-outline"></ion-icon>
-            logo
-            </span>
-        </div>
-        <nav class="bg-gray-100 border-b px-6 shadow md:flex md:items-center h-20">
-            <!-- Primary Navigation Menu -->
+                            <li>
+                                <a
+                                    class="fonte-sans sm:text-xl text-slate-600 transition hover:border-2 border-b-red-500"
+                                    href="/economia"
+                                >
+                                    Economia
+                                </a>
+                            </li>
 
-            <!-- Navigation Links -->
-            <div class="bg-indigo-100 z-[-1] md:static absolute w-full">
-                <NavLink :href="route('home')" :active="route().current('home')">
-                    <h2 class="Font-Sans text-base"> Inicio</h2>
-                </NavLink>
-                <NavLink :href="route('esportes')" :active="route().current('esportes')">
-                    <h2 class="Font-Sans text-base"> Esportes</h2>
-                </NavLink>
-                <NavLink :href="route('economia')" :active="route().current('economia')">
-                    <h2 class="Font-Sans text-base"> Economia</h2>
-                </NavLink>
-                <NavLink :href="route('cultura')" :active="route().current('cultura')">
-                    <h2 class="Font-Sans text-base"> Cultura</h2>
-                </NavLink>
-                <NavLink :href="route('nacionais')" :active="route().current('nacionais')">
-                    <h2 class="Font-Sans text-base"> Noticias Nacionais</h2>
-                </NavLink>
+                            <li>
+                                <a
+                                    class="fonte-sans sm:text-xl text-slate-600 transition hover:border-2 border-b-red-500"
+                                    href="/cultura"
+                                >
+                                    Cultura
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="fonte-sans sm:text-xl text-slate-600 transition hover:border-2 border-b-red-500"
+                                    href="/nacionais"
+                                >
+                                    Noticias Nacionais
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="fonte-sans sm:text-xl text-slate-600 transition hover:border-2 border-b-red-500"
+                                    href="/nacionais"
+                                >
+                                    Blogueiros
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="flex items-center gap-4">
+
+                    <div class="block md:hidden">
+                        <button
+                            class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-
-        </nav>
-
-    </div>
+        </div>
+    </header>
 
 </template>

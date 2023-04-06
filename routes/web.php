@@ -34,7 +34,14 @@ Route::middleware([
         return Inertia::render('dashboard');
     })->name('Dashboard');
 
-    Route::get('/home', function () {
+    Route::get('/admin', function () {
+        return Inertia::render('Profile/show');
+    })->name('show');
+});
+
+
+Route::prefix('/')->group(function (){
+    Route::get('/', function () {
         return Inertia::render('Menu/Home');
     })->name('home');
 
@@ -54,11 +61,8 @@ Route::middleware([
         return Inertia::render('Menu/Nacionais');
     })->name('nacionais');
 
-    Route::get('/welcome', function () {
-        return Inertia::render('welcome');
-    })->name('welcome');
-
+    Route::get('/blogueiros', function () {
+        return Inertia::render('Menu/Blogueiros');
+    })->name('blogueiros');
 
 });
-
-
