@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -31,16 +32,15 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return Inertia::render('dashboard');
-    })->name('Dashboard');
+        return Inertia::render('Dashboard');
+    })->name('dashboard');
 
     Route::get('/admin', function () {
-        return Inertia::render('Profile/show');
-    })->name('show');
+        return Inertia::render('Auth/login');
+    })->name('admin.login');
 });
 
-
-Route::prefix('/')->group(function (){
+            /* rotas das view */
     Route::get('/', function () {
         return Inertia::render('Menu/Home');
     })->name('home');
@@ -65,4 +65,7 @@ Route::prefix('/')->group(function (){
         return Inertia::render('Menu/Blogueiros');
     })->name('blogueiros');
 
-});
+
+         /* rotas dinamicas */
+Route::get('posts/{slug}', [PostController::class,'show']);
+
